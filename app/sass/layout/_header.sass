@@ -7,6 +7,8 @@
     left: 0
     right: 0
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+  +media-sm 
+    padding-bottom: 10px
 
 .header-row 
   position: relative
@@ -18,11 +20,9 @@
     min-height: 100px
   +media-md
     min-height: 90px
-  +media-sm   
-    min-height: 80px
 
 .header__left 
-  width: 68%
+  width: 760px
   +media-1400
     width: 780px
     display: flex
@@ -30,17 +30,33 @@
     align-items: center
 
 .header__right
+  position: relative
   display: flex
   justify-content: space-between
   align-items: center
-  width: 32%
+  width: 350px
   +media-1400
     width: 250px
 
+.header__search
+  width: 127px
+  +media-sm 
+    width: 150px
+    margin-right: 10px
+
+.header__language 
+  +media-lg 
+    margin-right: 10px
+    order: -1
+  +media-sm 
+    position: absolute
+    top: 46px
+    left: 64px
+ 
 .header__logo
   position: absolute
   top: 50% 
-  left: -255px
+  left: -240px
   transform: translateY(-50%)  
   +media-1400
     position: static
@@ -61,10 +77,22 @@
     padding-right: 25px
   +media-sm 
     display: none
+    position: absolute
+    top: 100px
+    left: 0 
+    right: 0
+    padding-right: 0
+    background-color: $color-green
+    &.active 
+      display: block
+      
+.search 
+  position: relative
 
 .search__text 
   display: inline-block
   vertical-align: middle
+  width: 105px
   font-size: 14px 
   line-height: 1.2
   color: $color-gray
@@ -74,10 +102,14 @@
     outline-color: $color-blue
   +media-1400
     width: 100px
-  +media-md
-    display: none
-
-
+  +media-sm
+    width: 125px
+    border: 2px solid $color-green
+    border-radius: 5px
+    font-size: 15px
+    font-size: 15px
+    padding: 5px 10px
+ 
 .search__submit 
   display: inline-block
   vertical-align: middle
@@ -90,15 +122,13 @@
   background-size: contain
   cursor: pointer
   +media-sm 
-    width: 30px
-    height: 30px
+    width: 20px
+    height: 20px
+
 
 
 .language 
   cursor: pointer
-  +media-sm 
-    display: none
-
 
 .language__name 
   position: relative
@@ -131,8 +161,14 @@
   +media-sm 
     display: none
 
-.nav-btn 
+.header__nav-btn
   display: none
+  +media-sm 
+    display: block
+  
+
+.nav-btn 
+  display: flex
   flex-direction: column
   justify-content: space-between
   padding: 8px 5px
@@ -140,13 +176,24 @@
   height: 40px
   // border: 2px solid $color-black
   cursor: pointer
+  transition: .3s
   span 
     display: block
     height: 2px 
     width: 100%
     background-color: $color-black
-  +media-sm 
-    display: flex
+    transition: .3s
+    &:nth-child(2)
+      transform: scale(1)
+.nav-btn.active 
+  span
+    &:nth-child(1)
+      transform: translateY(11px) rotate(45deg)
+    &:nth-child(2)
+      transform: scale(0)
+    &:nth-child(3)
+      transform: translateY(-11px) rotate(-45deg)
+  
 
 @media (max-width: 1670px)
   .header__logo

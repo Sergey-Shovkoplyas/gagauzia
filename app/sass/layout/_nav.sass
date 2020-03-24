@@ -2,6 +2,9 @@
   list-style: none 
   padding: 0
   margin: 0
+  +media-sm  
+    padding: 10px 0
+    box-shadow: 0 5px 5px -5px #000
 
 .nav__item 
   display: inline-block
@@ -10,6 +13,13 @@
     margin-right: 0
   +media-lg
     margin-right: 15px
+  +media-sm 
+    display: block
+    text-align: center
+    margin-right: 0px
+    border-bottom: 1px solid $color-gray-light
+    &:last-child 
+      border-bottom: none
 
 .nav__link 
   display: block
@@ -24,5 +34,9 @@
     color: $color-black
   +media-lg
     font-size: 13px
+  +media-sm 
+    font-size: 15px
+    padding: 10px 0px
+    color: $color-black
 
   

@@ -9,36 +9,54 @@
   position: relative
   display: flex
   justify-content: space-between
-  padding-left: 90px
+  padding-left: 95px
   +media-1400 
     padding-left: 0
   +media-md 
     flex-wrap: wrap
 
 .footer__logo-block
+  position: absolute
+  left: -257px
+  bottom: -10px
+  height: 343px
+  width: 260px
   +media-1400 
+    position: static
+    margin-right: 30px
+  +media-lg 
     margin-right: 20px
+  +media-md 
+    height: 300px
   +media-sm 
     width: 100%
     margin-right: 0
-    margin-bottom: 30px
+    margin-bottom: 10px
     text-align: center
 
 .footer__logo
   position: absolute
   top: 0
-  left: -255px
+  left: 0
+  width: 127px
+  .logo 
+    width: 100%
   +media-1400
     position: static
-    margin-bottom: 20px
+    margin-bottom: 130px
+  +media-md
+    margin-bottom: 10px
+  +media-sm
+   margin-left: auto 
+   margin-right: auto
   a
     +media-sm 
       margin: 0 auto
 
 .footer__widget
   position: absolute
-  bottom: -20px
-  left: -255px
+  bottom: 0
+  left: 0
   +media-1400
     position: static
 
@@ -67,33 +85,33 @@
   font-size: 14px
   font-weight: 500
   color: $color-gray
-  margin-bottom: 42px
+  margin-bottom: 35px
   +media-lg 
     width: auto
   +media-md 
     margin-bottom: 10px
 
 .footer__companies 
-  margin-bottom: 60px
+  margin-bottom: 53px
   +media-md 
     margin-bottom: 10px
 
 .footer__companies-link
   display: inline-block
   vertical-align: middle
-  margin-right: 67px
+  margin-right: 62px
   +media-lg 
     margin-right: 20px
 
 .footer__form-title
   font-weight: 500
   font-size: 20px
-  color: $color-gray
-  margin-bottom: 10px
+  color: $color-gray-light
+  margin-bottom: 7px
 
 .footer__form-text
   width: 350px
-  padding: 12px 14px
+  padding: 10px 14px
   margin-right: 28px
   border: 2px solid $color-gray-light
   background-color: #fff
@@ -138,7 +156,7 @@
   display: inline-block
   font-size: 14px
   font-weight: 500
-  margin-bottom: 20px
+  margin-bottom: 18px
   padding-right: 16px
   color: #fff
   &::after 
@@ -166,8 +184,7 @@
     margin-top: 5px
 
 @media (max-width: 1670px)
-  .footer__logo
+  .footer__logo-block
     left: -120px
-  .footer__widget
-    left: -140px
+
 

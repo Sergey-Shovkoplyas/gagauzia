@@ -1,9 +1,9 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
-	console.log( 'JQuery!!!' );
+	console.log('JQuery!!!');
 
 	// -----------------------initialize sliders------------------
-	
+
 	$('.introduce__slider').slick({
 		dots: true,
 		arrows: false
@@ -12,6 +12,7 @@ $( document ).ready(function() {
 	$('.news__slider').slick({
 		dots: false,
 		arrows: true,
+		infinite: true,
 		slidesToShow: 3,
 		responsive: [
 			{
@@ -25,7 +26,7 @@ $( document ).ready(function() {
 				settings: {
 					slidesToShow: 1,
 					centerMode: true,
-					
+
 				}
 			},
 			{
@@ -38,5 +39,30 @@ $( document ).ready(function() {
 			}
 		]
 	});
+
+	$('.useful-links__slider').slick({
+		dots: false,
+		arrows: false,
+		slidesToShow: 1,
+		variableWidth: true
+	});
+
+	// ------------------ toggle menu ----------------------
+
+	$('.nav-btn').on('click', function () {
+		$(this).toggleClass('active');
+		$('.header__nav').toggleClass('active');
+	});
+
+	// ------------------ numbers ----------------------
+
+
+	/* $('#basic-waypoint').waypoint(function (direction) {
+		alert('CARRY OUT MY ACTION')
+		this.destroy()
+	}); */
+
+	// $('.numbers__quantity').countUp();
+
 
 });
