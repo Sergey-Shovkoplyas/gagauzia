@@ -1,0 +1,83 @@
+.info
+  margin-bottom: 130px
+  +media-md 
+    margin-bottom: 70px
+  +media-sm
+    margin-bottom: 20px
+
+.info__row 
+  margin: 0 -15px
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-wrap: wrap
+    justify-content: center
+
+.info__item 
+  position: relative
+  width: 33.33%
+  height: 220px
+  margin: 0 15px
+  text-align: center
+  +media-lg 
+    height: 240px
+  +media-md
+    height: 280px
+  +media-sm 
+    height: 190px
+    width: 340px
+    margin-bottom: 30px
+
+.info__title 
+  position: relative
+  display: inline-block
+  font-weight: 500
+  font-size: 20px
+  line-height: 1.5
+  padding-left: 35px
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0, -50%)
+    width: 20px
+    height: 20px
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+  &--1
+    color: $color-blue
+    &::before
+      background-image: url('../img/info-1.svg')
+  &--2
+    color: $color-green
+    &::before
+      background-image: url('../img/info-2.svg')
+  &--3
+    color: $color-crame
+    &::before
+      background-image: url('../img/info-3.svg')
+  +media-lg 
+    font-size: 18px
+
+.info__text
+  position: absolute
+  width: 100%
+  top: 78px 
+  +media-sm 
+    top: 45px
+
+.info__btn 
+  position: absolute
+  bottom: 0
+  left: 50% 
+  transform: translate(-50%, 0)
+  &.button 
+    +media-lg
+      padding: 12px 30px
+    +media-md
+      padding: 12px 13px
+    +media-sm
+      padding: 12px 30px
+

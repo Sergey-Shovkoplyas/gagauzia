@@ -1,0 +1,66 @@
+.slick-dots 
+  position: absolute
+  left: 50%
+  bottom: 30px
+  transform: translateX(-50%)
+  list-style: none 
+  padding: 0
+  margin: 0
+  font-size: 0
+  line-height: 0
+  li 
+    display: inline-block
+    width: 10px
+    height: 10px
+    border: 1.5px solid #fff
+    border-radius: 50%
+    margin-right: 15px
+    &:last-child 
+      margin-right: 0
+    &.slick-active 
+      background-color: #fff
+    button 
+      display: none
+    +media-xs
+      width: 8px
+      height: 8px
+  +media-md 
+    bottom: 15px
+  +media-xs
+    bottom: 10px
+
+.slick-arrow 
+  position: absolute
+  top: 140px
+  z-index: 1
+  font-size: 0
+  line-height: 0
+  width: 52px 
+  height: 11px
+  border: none 
+  outline: none
+  padding: 0
+  background: url('../../img/arrow.svg') no-repeat center
+  background-size: cover
+  &::before 
+    position: absolute
+    width: 33px 
+    height: 17px
+    font-size: 14px 
+    line-height: 1.2
+    color: #fff 
+
+.slick-prev 
+  left: 0
+  &::before 
+    content: 'PREV'
+    top: -11px
+    left: 14px
+.slick-next 
+  right: 0
+  transform: rotate(180deg)
+  &::before 
+    content: 'NEXT'
+    top: 6px
+    left: 14px
+    transform: rotate(180deg)

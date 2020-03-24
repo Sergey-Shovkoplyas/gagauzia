@@ -1,0 +1,96 @@
+
+.news 
+  margin-bottom: 130px
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 145px
+    left: 0
+    right: 0
+    height: 240px
+    background-color: $color-gray-light
+  +media-md 
+    margin-bottom: 50px
+    &::before
+      top: 115px
+  +media-sm 
+    margin-bottom: 20px
+  +media-xs
+    &::before
+      height: 180px
+      top: 95px
+  
+  
+.news__title 
+  text-align: center
+  margin-bottom: 70px
+  +media-md 
+    margin-bottom: 40px
+  +media-sm
+    margin-bottom: 20px
+
+.news__slider 
+  margin: 0 -20px
+  .slick-prev 
+    left: -110px
+  .slick-next 
+    right: -110px
+  .slick-track
+    display: flex
+  +media-1400 
+    .slick-prev 
+      left: 20px
+    .slick-next 
+      right: 20px
+  +media-xs 
+    .slick-prev,
+    .slick-next 
+      display: none
+
+
+.news__slider-item 
+  margin: 0 3px
+  .news-block
+    max-width: 500px
+    margin: 0 auto
+
+
+
+// -----------------.news-block----------------
+.news-block
+  padding-bottom: 20px
+
+.news-block__img 
+  img
+    width: 100%
+
+.news-block__descr 
+  position: relative
+  padding: 20px 28px 30px 
+  margin: 0px 12px
+  margin-top: -60px
+  text-align: center
+  background-color: #FFFFFF
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1)
+  +media-md 
+    padding: 20px 20px 30px
+  +media-xs
+    padding: 15px 15px 20px
+
+.news-block__title 
+  margin-bottom: 20px
+  font-size: 22px
+  line-height: 1.2
+  font-weight: 500
+  color: $color-black
+  +media-xs 
+    margin-bottom: 10px
+    font-size: 18px
+
+.news-block__text 
+  margin-bottom: 20px
+  color: $color-gray
+  +media-xs 
+    margin-bottom: 10px
+    font-size: 15px
