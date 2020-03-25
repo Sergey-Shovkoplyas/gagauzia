@@ -47,6 +47,20 @@ $(document).ready(function () {
 		variableWidth: true
 	});
 
+	$('.news-detail__slider').slick({
+		dots: true,
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 1700,
+				settings: {
+					dots: true,
+					arrows: false,
+				}
+			}	
+		]
+	});
+
 	// ------------------ toggle menu ----------------------
 
 	$('.nav-btn').on('click', function () {
