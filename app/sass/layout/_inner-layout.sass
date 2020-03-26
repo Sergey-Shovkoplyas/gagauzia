@@ -1,0 +1,68 @@
+.inner 
+  margin-top: 62px 
+  +media-md 
+    margin-top: 30px 
+  +media-sm 
+    margin-top: 140px 
+.inner__row 
+  display: flex
+  justify-content: space-between
+  +media-md 
+    display: block
+
+.inner__left 
+  width: 255px
+  +media-lg 
+    margin-right: 20px
+    width: 408px 
+  +media-md 
+    width: auto
+    margin-left: 30px
+    margin-right: 30px
+    margin-bottom: 30px
+  +media-sm 
+    margin-left: 0px
+    margin-right: 0px
+
+.inner__right
+  width: 825px
+  +media-md 
+    width: auto
+
+.inner__title
+  margin-bottom: 30px
+  +media-md 
+    margin-bottom: 20px
+    text-align: center
+  
+.inner__nav 
+  display: flex
+  flex-direction: column
+  width: 303px
+  padding: 0
+  margin: 0
+  list-style: none
+  margin-left: -48px
+  +media-lg 
+    margin-left: 0
+    width: auto
+
+.inner__nav-item
+  margin-bottom: 10px
+  &:last-child 
+    margin-bottom: 0
+
+.inner__nav-link 
+  display: block
+  padding: 18px 50px
+  background-color: $color-green 
+  color: $color-black
+  text-transform: uppercase
+  font-weight: 500
+  border-radius: 10px
+  +media-sm 
+    font-size: 14px
+.inner__nav-link.active 
+  background-color: #fff
+  border: 3px solid $color-green 
+  padding: 14px 50px

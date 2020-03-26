@@ -1,0 +1,100 @@
+.newsletter
+  margin-bottom: 125px
+  +media-md 
+    margin-bottom: 80px
+
+.newsletter__item
+  display: flex
+  justify-content: space-between
+  padding-bottom: 20px 
+  margin-bottom: 30px 
+  border-bottom: 2px solid $color-gray-light
+  +media-sm 
+    flex-direction: column
+
+.newsletter__item-img
+  width: 220px
+  margin-right: 0px
+  img
+    width: 100% 
+  +media-lg 
+    width: 200px
+    margin-right: 10px
+    align-self: center
+  +media-md
+    width: 220px
+    margin-right: 0px
+    align-self: top
+  +media-sm
+    width: 300px
+ 
+.newsletter__item-info
+  width: 355px
+  +media-lg 
+    width: 250px
+  +media-md 
+    width: 310px
+  +media-sm 
+    width: auto
+    text-align: justify
+
+.newsletter__item-title 
+  display: inline-block
+  margin: 0
+  margin-bottom: 10px
+  font-size: 22px
+  font-weight: 500
+
+.newsletter__item-number
+  color: $color-gray
+  font-weight: 500
+  span 
+    color: $color-black
+
+.newsletter__item-date 
+  margin-bottom: 15px
+  font-size: 14px
+  color: $color-gray
+  font-weight: 500
+
+.newsletter__item-text 
+  margin: 0
+  +media-sm 
+    margin-bottom: 15px
+
+.newsletter__item-buttons
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  width: 130px
+  .button 
+    padding: 10px 26px
+  +media-sm 
+    flex-direction: row
+    justify-content: space-around
+    width: auto
+  
+.newsletter__item-download-btn 
+  margin-top: 20px
+  margin-bottom: 8px
+  .button 
+    border-color: $color-red
+    color: $color-red
+  +media-sm 
+    margin-top: 0px
+    margin-bottom: 0px
+
+
+// -------------------decor-------------------
+
+.newsletter
+  position: relative
+  .decor-1 
+    bottom: -30px
+    left: -280px
+  .decor-2
+    top: 110px
+    right: -280px
+  .decor-3
+    bottom: -60px
+    right: -290px

@@ -1,0 +1,127 @@
+.news-page
+  margin-bottom: 100px
+  +media-sm 
+    margin-bottom: 40px
+  .inner__row
+    +media-lg
+      flex-wrap: wrap
+  .inner__left
+    +media-lg
+      width: 310px
+    +media-md 
+      width: auto
+  .inner__right 
+    width: 730px
+    +media-lg
+      width: 600px
+    +media-md 
+      margin: 0 auto
+    +media-sm 
+      width: auto
+  .news-block
+    padding-bottom: 53px
+  .news-block__descr
+    margin: 0px 26px
+    margin-top: -60px
+    padding: 20px
+  .news-block__title
+    text-transform: uppercase
+    font-size: 16px
+    margin-bottom: 10px
+  .news-block__title--fix
+    margin: 7px 0
+  .news-block__text
+    font-size: 14px
+  .news-block__btn 
+    .button 
+      padding: 12px 30px
+  
+.news-page__row 
+  width: 730px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  +media-lg
+    width: 610px
+  +media-sm 
+      width: auto
+
+.news-page__item 
+  width: 350px
+  +media-lg
+    width: 300px
+  +media-sm 
+    margin: 0 auto
+
+.news-page__newsletter-col 
+  width: 220px
+  margin-right: -155px 
+  +media-lg
+    width: auto 
+    margin-right: 0
+
+.news-page__newsletter-head 
+  margin-bottom: 15px
+  font-size: 22px
+  font-weight: 500
+  +media-md 
+    text-align: center
+
+.news-page__newsletter-item-wrap
+  +media-lg
+    display: flex
+  +media-md 
+    justify-content: center
+  +media-sm 
+    flex-direction: column
+
+.news-page__newsletter-item
+  display: block
+  padding-bottom: 20px
+  margin-bottom: 20px
+  margin-right: 20px
+  font-weight: 500
+  border-bottom: 2px solid $color-gray-light 
+  +media-sm 
+    text-align-last: center
+    margin-right: 0
+
+.news-page__newsletter-title
+  margin: 0
+  font-size: 16px
+  font-weight: 500
+  color: $color-black
+
+.news-page__newsletter-number
+  color: $color-gray
+  span 
+    color: $color-black
+
+.news-page__newsletter-date 
+  font-size: 14px
+  color: $color-gray
+
+
+// -------------------decor-------------------
+
+.news-page 
+  position: relative
+  .decor-1 
+    bottom: 970px
+    left: -280px
+  .decor-2
+    bottom: 510px
+    left: -300px
+  .decor-3
+    bottom: 60px
+    left: -340px
+
+  .decor-4
+    top: 140px
+    right: -280px
+  .decor-5
+    bottom: 840px
+    right: -290px
+  .decor-6
+    bottom: 520px
+    right: -220px
