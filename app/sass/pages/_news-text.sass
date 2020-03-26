@@ -1,0 +1,76 @@
+.news-text__title 
+  max-width: 960px
+  margin: 0 auto
+  margin-bottom: 60px
+  margin-top: 100px
+  font-size: 36px
+  line-height: 1.2
+  font-weight: 500
+  text-transform: uppercase
+  text-align: center 
+  +media-md 
+    margin-top: 40px
+    margin-bottom: 30px
+    font-size: 33px
+  +media-sm 
+    margin-top: 140px
+    font-size: 26px
+
+
+.news-text__text 
+  margin: 0px
+  padding: 0px
+  font-size: 16px 
+  line-height: 1.8
+  margin-bottom: 30px
+  +media-md
+    text-align: justify
+
+.news-text__article-wrap 
+  position: relative
+  margin-bottom: 35px
+  padding: 0 65px
+  &::before,
+  &::after 
+    content: ''
+    position: absolute
+    width: 35px
+    height: 35px
+    background: url('../img/news-detail/quote.png') no-repeat center
+  &::before 
+    top: -10px
+    left: 0px
+  &::after
+    bottom: -4px
+    right: 0
+    transform: rotate(180deg)
+  +media-sm 
+    padding: 0 35px
+
+
+.news-text__article-title
+  margin: 0
+  margin-bottom: 35px
+  font-size: 16px 
+  line-height: 1.8
+  font-weight: 600
+  +media-sm
+    margin-bottom: 10px
+    text-align: center
+
+.news-text__article-text 
+  line-height: 1.8
+  margin: 0
+  +media-md
+    text-align: justify
+
+// -------------------decor-------------------
+
+.news-text 
+  position: relative
+  .decor-1 
+    top: 400px
+    left: -280px
+  .decor-2
+    bottom: -40px
+    right: -290px
